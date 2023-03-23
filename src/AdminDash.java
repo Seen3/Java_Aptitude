@@ -1,3 +1,4 @@
+import com.mongodb.client.model.Filters;
 import org.bson.Document;
 
 import javax.swing.*;
@@ -168,6 +169,7 @@ public class AdminDash extends JFrame implements ActionListener {
         String password = passwordField.getText();
 
         System.out.println(username+" "+password);
+        DatabaseManager.database.getCollection("loginData").updateOne(Filters.eq("username", username), new Document("$set", new Document("password", password)));
     }
 
     private void deleteUser() {
@@ -175,12 +177,13 @@ public class AdminDash extends JFrame implements ActionListener {
         String username = usernameField.getText();
         String password =passwordField.getText();
         System.out.println(username+" "+password);
-
+        DatabaseManager.database.getCollection("loginData").deleteOne(Filters.eq("username", username));
     }
 
     private void viewUser() {
         // Get the username from the text field
         String username = usernameField.getText();
+        //New window to show results.
 
     }
 }

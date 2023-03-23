@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10a1f3cd-385b-424d-bd79-f4f3bf3778fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuizApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdminDash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatabaseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ObjectConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuizApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuizDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VT323-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/mongo-java-driver-3.12.12.jar" afterDir="false" />
+    <list default="true" id="10a1f3cd-385b-424d-bd79-f4f3bf3778fb" name="Changes" comment="Current progress">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdminDash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminDash.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,9 +68,19 @@
       <option name="presentableId" value="Default" />
       <updated>1679418513764</updated>
     </task>
+    <task id="LOCAL-00001" summary="Current progress">
+      <created>1679549725657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679549725657</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Current progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Current progress" />
   </component>
 </project>
