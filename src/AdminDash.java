@@ -32,6 +32,7 @@ public class AdminDash extends JFrame implements ActionListener {
         setTitle("Admin Panal");
         setSize(800, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
 
         JPanel userPanel = new JPanel(new GridLayout(0, 2));
         JPanel questionPanel = new JPanel(new GridLayout(0, 2));
@@ -183,6 +184,19 @@ public class AdminDash extends JFrame implements ActionListener {
     private void viewUser() {
         // Get the username from the text field
         String username = usernameField.getText();
+        String pass=passwordField.getText();
+        Document document=DatabaseManager.database.getCollection("loginData").find(new Document("username",username)).first();
+        if(pass.equals(document.getString("password")))
+        {
+            System.out.println(document);
+            int easy = document.get("score", Document.class).getInteger("easy");
+            int medium = document.get("score", Document.class).getInteger("medium");
+            int hard = document.get("score", Document.class).getInteger("hard");
+            ResultWindow r=new ResultWindow(username,easy,medium,hard);
+        }
+        else{
+            System.out.println("Invalid User");
+        }
         //New window to show results.
 
     }
