@@ -7,7 +7,7 @@ public class DatabaseManager {
     public static MongoDatabase database;
 
     static {
-        ConnectionString connectionString = new ConnectionString("mongodb+srv://Seen:$$@cluster0.tk6ifew.mongodb.net/?retryWrites=true&w=majority");
+        ConnectionString connectionString = new ConnectionString("mongodb+srv://Seen:$$@cluster0.tk6ifew.mongodb.net/?retryWrites=true&w=majority"); //I have not put authentication password here due to security reasons
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .build();
